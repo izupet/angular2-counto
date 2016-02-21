@@ -1,1 +1,48 @@
-My Page
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+
+        <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+        <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+        <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="node_modules/rxjs/bundles/Rx.js"></script>
+        <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+        <title>Angular2-counto by izupet</title>
+        <script>
+            System.config({
+                packages: {
+                    app: {
+                        format: 'register',
+                        defaultExtension: 'js'
+                    }
+                }
+            });
+            System.import('app/main')
+                .then(null, console.error.bind(console));
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Angular2-counto</h1>
+                <h2>Angular 2 package for nice count animations</h2>
+                <section id="downloads">
+                    <a href="https://github.com/izupet/angular2-counto/zipball/master" class="btn">Download as .zip</a>
+                    <a href="https://github.com/izupet/angular2-counto/tarball/master" class="btn">Download as .tar.gz</a>
+                    <a href="https://github.com/izupet/angular2-counto" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+                </section>
+            </div>
+        </header>
+        <div class="container">      
+              <section id="main_content">
+                <my-app>Loading...</my-app>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+app:
+  image: izupet/app
+  container_name: counto_app_1
+  volumes:
+    - ./app/www.conf:/etc/php5/fpm/pool.d/www.conf
+    - ./../../../counto:/opt/web
+  ports:
+    - "9000"
+    - "8080:8080"
+  links:
+    - memcached
+    - db
+memcached:
+  image: izupet/memcached
+  container_name: counto_memcached_1
+  ports:
+   - "11211"
+nginx:
+  image: izupet/nginx
+  container_name: counto_nginx_1
+  volumes:
+    - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    - ./nginx/default.conf:/etc/nginx/sites-available/default.conf
+  volumes_from:
+    - app
+  links:
+    - app
+  ports:
+    - "80:80"
+db:
+  image: izupet/db
+  container_name: counto_db_1
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: counto
+    MYSQL_USER: counto
+    MYSQL_PASSWORD: counto
+    MYSQL_ROOT_PASSWORD: counto

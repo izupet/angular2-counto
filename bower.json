@@ -1,0 +1,24 @@
+{
+  "name": "betfair",
+  "description": "betfair bot",
+  "main": "",
+  "authors": [
+    "Igor Zupet"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "betfair",
+    "bot",
+    "angular"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ]
+}
