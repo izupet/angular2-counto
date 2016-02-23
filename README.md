@@ -11,12 +11,12 @@ npm install counto
  
 | Parameter     | Required      | Unit          | Description                             |
 | ------------- | ------------- | ------------- | --------------------------------------- |
-| step          | yes           | milisecond    | How fast counter in updated             |
+| step          | yes           | milisecond    | How fast counter is updated             |
 | countTo       | yes           | number        | Any start number                        |
 | countFrom     | yes           | number        | Any end number                          |                  
 | duration      | yes           | seconds       | Duration of animation                   |
  
-Any of above parameters can be freely binded to an event. Every time parameter changes, animation wil be executed. 
+Any of above parameters can be freely binded to an event. Every time parameter changes, animation will be executed. 
 You can use any pipe you want to modify output to your needs.
  
 ## Example
