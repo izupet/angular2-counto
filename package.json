@@ -1,0 +1,29 @@
+{
+  "name": "angular2-counto",
+  "version": "1.0.2",
+  "description": "Awesome angular package for counting animations.",
+  "main": "angular2-counto.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/izupet/angular2-counto.git"
+  },
+  "keywords": [
+    "angular2",
+    "count",
+    "animation",
+    "awesome"
+  ],
+  "author": "Igor Zupet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/izupet/angular2-counto/issues"
+  }
+}
