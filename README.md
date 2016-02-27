@@ -6,6 +6,48 @@ Angular 2 package for nice count animations
 ```
 npm install counto
 ```
+
+```
+System.config({
+    map: {
+        'angular2-counto': 'node_modules/angular2-counto'
+    },
+    packages: {
+        'angular2-counto': {
+            format: 'register',
+            defaultExtension: 'js'
+        }
+    }
+});
+ ```
+ 
+ ```
+import {Counto} from "angular2-counto/src/counto.directive";
+   
+@Component({
+    directives: [Counto]
+})
+
+export class AccountComponent {
+    public intermediate: any;
+}
+```
+
+ ```
+<counto [step]="30" [countTo]="10" [countFrom]="0" [duration]="4" (countoChange)="intermediate = $event">{{intermediate | currency:'EUR':true:'1.2-2'}}</counto>
+ ```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 ## Usage
  
