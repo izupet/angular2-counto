@@ -85,3 +85,7 @@ export class AppComponent {
 ## Demo
 
 http://izupet.github.io/angular2-counto
+
+## Comming up soon
+
+* nonlinear steps 
