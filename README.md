@@ -4,7 +4,7 @@ Angular 2 package for nice count animations
  
 ## Installation
 ```
-npm install counto
+npm install angular2-counto
 ```
 
 ```
@@ -86,6 +86,3 @@ export class AppComponent {
 
 http://izupet.github.io/angular2-counto
 
-## Comming up soon
-
-* nonlinear steps 
