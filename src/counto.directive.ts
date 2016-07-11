@@ -12,6 +12,7 @@ export class Counto {
     private _duration: number;
     private _countTo: number;
     private _countFrom: number;
+    private _step: number;
 
     set duration(duration) {
         this._duration = parseFloat(duration);
