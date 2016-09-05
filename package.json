@@ -1,6 +1,6 @@
 {
     "name": "angular2-counto",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "description": "Awesome angular package for counting animations.",
     "main": "angular2-counto.js",
     "directories": {
