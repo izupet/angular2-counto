@@ -68,10 +68,6 @@ You can use any pipe you want to modify output to your needs.
    </counto>",
    directives: [Counto]
 })
-
-export class AppComponent {
-   public intermediate: any;
-}
 ```
 
 ## Demo
