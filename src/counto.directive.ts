@@ -1,8 +1,7 @@
-import {Directive, Output, EventEmitter} from 'angular2/core';
+import {Directive, Input, Output, EventEmitter} from '@angular/core';
 
 @Directive({
-    selector: 'counto',
-    properties: ['duration: duration', 'countFrom: countFrom', 'countTo: countTo', 'step: step']
+    selector: 'counto'
 })
 
 export class Counto {
@@ -14,21 +13,25 @@ export class Counto {
     private _countFrom: number;
     private _step: number;
 
+    @Input()
     set duration(duration) {
         this._duration = parseFloat(duration);
         this.run();
     }
 
+    @Input()
     set countTo(countTo) {
         this._countTo = parseFloat(countTo);
         this.run();
     }
 
+    @Input()
     set countFrom(countFrom) {
         this._countFrom = parseFloat(countFrom);
         this.run();
     }
 
+    @Input()
     set step(step) {
         this._step = parseFloat(step);
         this.run();
