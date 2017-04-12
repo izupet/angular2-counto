@@ -12,10 +12,7 @@
         "suppressImplicitAnyIndexErrors": true
       },
       "exclude": [
-          "node_modules"
-      ],
-      "include": [
-          "index.ts",
-          "src/*.ts"
+          "node_modules",
+          "example"
       ]
 }
