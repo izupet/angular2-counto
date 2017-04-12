@@ -1,38 +1,38 @@
-import {Directive, Input, Output, EventEmitter} from '@angular/core';
+import { Directive, Input, Output, EventEmitter } from '@angular/core';
 
 @Directive({
-    selector: 'counto'
+    selector: '[counto]'
 })
 
-export class Counto {
+export class CountoDirective {
 
     @Output() countoChange = new EventEmitter();
-    private _timer;
+    private _timer: any;
     private _duration: number;
     private _countTo: number;
     private _countFrom: number;
     private _step: number;
- 
+
     @Input()
-    set duration(duration) {
+    set duration(duration: string) {
         this._duration = parseFloat(duration);
         this.run();
     }
 
     @Input()
-    set countTo(countTo) {
+    set countTo(countTo: string) {
         this._countTo = parseFloat(countTo);
         this.run();
     }
 
     @Input()
-    set countFrom(countFrom) {
+    set countFrom(countFrom: string) {
         this._countFrom = parseFloat(countFrom);
         this.run();
     }
 
     @Input()
-    set step(step) {
+    set step(step: string) {
         this._step = parseFloat(step);
         this.run();
     }

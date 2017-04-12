@@ -9,11 +9,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Counto = (function () {
-    function Counto() {
+var CountoDirective = (function () {
+    function CountoDirective() {
         this.countoChange = new core_1.EventEmitter();
     }
-    Object.defineProperty(Counto.prototype, "duration", {
+    Object.defineProperty(CountoDirective.prototype, "duration", {
         set: function (duration) {
             this._duration = parseFloat(duration);
             this.run();
@@ -21,7 +21,7 @@ var Counto = (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(Counto.prototype, "countTo", {
+    Object.defineProperty(CountoDirective.prototype, "countTo", {
         set: function (countTo) {
             this._countTo = parseFloat(countTo);
             this.run();
@@ -29,7 +29,7 @@ var Counto = (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(Counto.prototype, "countFrom", {
+    Object.defineProperty(CountoDirective.prototype, "countFrom", {
         set: function (countFrom) {
             this._countFrom = parseFloat(countFrom);
             this.run();
@@ -37,7 +37,7 @@ var Counto = (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(Counto.prototype, "step", {
+    Object.defineProperty(CountoDirective.prototype, "step", {
         set: function (step) {
             this._step = parseFloat(step);
             this.run();
@@ -45,7 +45,7 @@ var Counto = (function () {
         enumerable: true,
         configurable: true
     });
-    Counto.prototype.run = function () {
+    CountoDirective.prototype.run = function () {
         var _this = this;
         clearInterval(_this._timer);
         if (isNaN(_this._duration)) {
@@ -101,34 +101,34 @@ var Counto = (function () {
     __decorate([
         core_1.Output(), 
         __metadata('design:type', Object)
-    ], Counto.prototype, "countoChange", void 0);
+    ], CountoDirective.prototype, "countoChange", void 0);
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Object), 
-        __metadata('design:paramtypes', [Object])
-    ], Counto.prototype, "duration", null);
+        __metadata('design:type', String), 
+        __metadata('design:paramtypes', [String])
+    ], CountoDirective.prototype, "duration", null);
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Object), 
-        __metadata('design:paramtypes', [Object])
-    ], Counto.prototype, "countTo", null);
+        __metadata('design:type', String), 
+        __metadata('design:paramtypes', [String])
+    ], CountoDirective.prototype, "countTo", null);
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Object), 
-        __metadata('design:paramtypes', [Object])
-    ], Counto.prototype, "countFrom", null);
+        __metadata('design:type', String), 
+        __metadata('design:paramtypes', [String])
+    ], CountoDirective.prototype, "countFrom", null);
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Object), 
-        __metadata('design:paramtypes', [Object])
-    ], Counto.prototype, "step", null);
-    Counto = __decorate([
+        __metadata('design:type', String), 
+        __metadata('design:paramtypes', [String])
+    ], CountoDirective.prototype, "step", null);
+    CountoDirective = __decorate([
         core_1.Directive({
-            selector: 'counto'
+            selector: '[counto]'
         }), 
         __metadata('design:paramtypes', [])
-    ], Counto);
-    return Counto;
+    ], CountoDirective);
+    return CountoDirective;
 }());
-exports.Counto = Counto;
+exports.CountoDirective = CountoDirective;
 //# sourceMappingURL=counto.directive.js.map
