@@ -16,10 +16,7 @@
     "type": "git",
     "url": "https://github.com/izupet/angular2-counto.git"
   },
-  "dependencies": {
-    "@types/core-js": "^0.9.41",
-    "ng-lazyload-image": "^3.1.0"
-  },
+  "dependencies": {},
   "keywords": [
     "angular",
     "count",

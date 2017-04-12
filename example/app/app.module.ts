@@ -2,7 +2,6 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CountoModule }  from 'angular2-counto';
 import { AppComponent }  from './app.component';
-import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   imports:      [ BrowserModule, CountoModule ],
