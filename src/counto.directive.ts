@@ -7,6 +7,7 @@ import { Directive, Input, Output, EventEmitter } from '@angular/core';
 export class CountoDirective {
 
     @Output() countoChange = new EventEmitter();
+    @Output() countoEnd = new EventEmitter();
     private _timer: any;
     private _duration: number;
     private _countTo: number;
@@ -82,6 +83,7 @@ export class CountoDirective {
                 if (intermediate <= _this._countTo) {
                     clearInterval(_this._timer);
                     _this.countoChange.emit(_this._countTo);
+                    _this.countoEnd.emit();
                 } else {
                     _this.countoChange.emit(intermediate);
                     intermediate -= increment;
@@ -90,6 +92,7 @@ export class CountoDirective {
                 if (intermediate >= _this._countTo) {
                     clearInterval(_this._timer);
                     _this.countoChange.emit(_this._countTo);
+                    _this.countoEnd.emit();
                 } else {
                     _this.countoChange.emit(intermediate);
                     intermediate += increment;
