@@ -1,6 +1,6 @@
 # angular2-counto
 
-Angular 2 package for nice count animations (angular 4, angular-cli AOT)
+Angular 5 package for nice count animations
 
 ## Installation
 ```
@@ -37,7 +37,7 @@ Just import module as below:
 
 Example with currency pipe:
  ```
-<div counto [step]="30" [countTo]="10" [countFrom]="0" [duration]="4" (countoChange)="counto = $event" (countoEnd)="onCountoEnd()">{{counto | currency:'EUR':true:'1.2-2'}}</div>
+<div counto [step]="30" [countTo]="10" [countFrom]="0" [duration]="4" (countoChange)="counto = $event" (countoEnd)="onCountoEnd()">{{counto | currency:'EUR':'symbol':'1.2-2'}}</div>
  ```
 
 ## Usage

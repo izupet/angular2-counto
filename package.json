@@ -1,6 +1,6 @@
 {
   "name": "angular2-counto",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Awesome angular package for counting animations.",
   "main": "index.js",
   "directories": {
@@ -29,23 +29,22 @@
     "url": "https://github.com/izupet/angular2-counto/issues"
   },
   "devDependencies": {
-    "@angular/common": "^2.4.0",
-    "@angular/compiler": "^2.4.0",
-    "@angular/compiler-cli": "^2.4.0",
-    "@angular/core": "^2.4.0",
-    "@angular/forms": "^2.4.0",
-    "@angular/http": "^2.4.0",
-    "@angular/platform-browser": "^2.4.0",
-    "@angular/platform-browser-dynamic": "^2.4.0",
-    "@types/core-js": "^0.9.37",
-    "concurrently": "^3.2.0",
-    "lite-server": "^2.2.2",
-    "rxjs": "^5.2.0",
-    "typescript": "~2.0.0",
-    "zone.js": "^0.7.6",
+    "@angular/common": "^5.1.0",
+    "@angular/compiler": "^5.1.0",
+    "@angular/compiler-cli": "^5.1.0",
+    "@angular/core": "^5.1.0",
+    "@angular/forms": "^5.1.0",
+    "@angular/http": "^5.1.0",
+    "@angular/platform-browser": "^5.1.0",
+    "@angular/platform-browser-dynamic": "^5.1.0",
+    "@types/node": "~6.0.60",
+    "concurrently": "^3.5.1",
     "core-js": "^2.4.1",
-    "@types/node": "^6.0.46",
-    "@types/jasmine": "2.5.36",
-    "systemjs": "0.19.40"
+    "jasmine-core": "~2.8.0",
+    "lite-server": "^2.3.0",
+    "rxjs": "^5.5.6",
+    "systemjs": "0.21.0",
+    "typescript": "~2.5.3",
+    "zone.js": "^0.8.19"
   }
 }

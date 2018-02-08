@@ -9,10 +9,16 @@
         "experimentalDecorators": true,
         "lib": [ "es2015", "dom" ],
         "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": true,
+        "declaration": true
       },
       "exclude": [
           "node_modules",
-          "example"
+          "example",
+          "tests"
+      ],
+      "include": [
+          "index.ts",
+          "src/*"
       ]
 }
