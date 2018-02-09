@@ -3,3 +3,5 @@ node_modules
 *.ts
 !*.d.ts
 package-lock.json
+*.ngFactory.ts
+*.ngsummary.json

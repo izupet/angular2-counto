@@ -4,3 +4,5 @@ node_modules
 *.js.map
 *.d.ts
 package-lock.json
+*.metadata.json
+*.ngsummary.json

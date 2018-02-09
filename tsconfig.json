@@ -11,14 +11,19 @@
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
         "declaration": true
-      },
-      "exclude": [
-          "node_modules",
-          "example",
-          "tests"
-      ],
-      "include": [
-          "index.ts",
-          "src/*"
-      ]
+    },
+    "angularCompilerOptions": {
+        "fullTemplateTypeCheck": true,
+        "preserveWhiteSpaces": false,
+        "strictMetadataEmit" : true
+    },
+    "exclude": [
+        "node_modules",
+        "example",
+        "tests"
+    ],
+    "include": [
+        "index.ts",
+        "src/*"
+    ]
 }

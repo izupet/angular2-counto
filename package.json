@@ -1,14 +1,14 @@
 {
   "name": "angular2-counto",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Awesome angular package for counting animations.",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "build": "tsc",
-    "build:example": "tsc -p example/",
+    "build": "ngc",
+    "build:example": "ngc -p example/",
     "lite": "lite-server",
     "serve": "concurrently \"npm run build\" \"npm run build:example\" \"npm run lite\" "
   },
